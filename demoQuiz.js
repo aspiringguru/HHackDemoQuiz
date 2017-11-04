@@ -71,7 +71,7 @@ export default class demoQuiz extends Component<{}> {
         />
         <View style={styles.rightContainer}>
           <Text style={styles.title}>{movie.title}</Text>
-          <Text style={styles.year}>{movie.year}</Text>
+          <Text style={styles.year}>{movie.mpaa_rating}</Text>
         </View>
       </View>
     );
