@@ -8,9 +8,10 @@ import {
   AppRegistry, Image, ListView, StyleSheet, Text, View,
 } from 'react-native';
 
-var REQUEST_URL = 'https://raw.githubusercontent.com/facebook/react-native/master/docs/MoviesExample.json';
+//var REQUEST_URL = 'https://raw.githubusercontent.com/facebook/react-native/master/docs/MoviesExample.json';
+var REQUEST_URL = 'https://raw.githubusercontent.com/aspiringguru/HHackDemoQuiz/master/demoQuiz.json';
 
-export default class SampleAppMovies extends Component<{}> {
+export default class demoQuiz extends Component<{}> {
   constructor(props) {
     super(props);
     this.state = {
@@ -71,7 +72,6 @@ export default class SampleAppMovies extends Component<{}> {
         <View style={styles.rightContainer}>
           <Text style={styles.title}>{movie.title}</Text>
           <Text style={styles.year}>{movie.year}</Text>
-          <Text style={styles.year}>{movie.mpaa_rating}</Text>
         </View>
       </View>
     );
